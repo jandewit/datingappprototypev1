@@ -1,0 +1,210 @@
+body {
+  margin: 0px;
+  font-family: 'Gotham Rounded', sans-serif;
+  color: #fff;
+  overflow: hidden;
+  background: url('/img/background_fast.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#matches {
+  position: fixed;
+  left: 100%;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url('/img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#no_matches {
+  text-align: center;
+  font-size: 22pt;
+  color: #000000;
+  font-weight: 400;
+  margin-top: 30%;
+}
+
+#no_matches img {
+  height: 5%;
+  margin-top: 16px;
+}
+
+#header {
+  width: 100%;
+  font-size: 26pt;
+  font-weight: 400;
+  text-align: center;
+}
+
+#logo {
+  text-align: center;
+  height: 8%;
+  margin-top: 10%;
+}
+
+#logo img {
+  height: 100%;
+}
+
+#title {
+    margin-top: 5%;
+    font-size: 21pt;
+    font-weight: 400;
+    margin-left: 10%;
+    text-align: left;
+}
+
+
+.profile {
+  height: 100%;
+  position: relative;
+  border-radius: 24px;
+}
+
+.name {
+  font-size: 18pt;
+  position: relative;
+  bottom: 52px;
+  left: 32px;
+}
+
+#main {
+  height: 60%;
+}
+
+.card, .profile_back {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+}
+
+.card {
+  display: none;
+}
+
+.profile_back .profile {
+  margin-top: 8px;
+  margin-left: 16px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#buttons {
+  position: absolute;
+  bottom: 3%;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+#buttons img {
+  height: 95%;
+}
+
+#dislike_button {
+  margin-right: 32px;
+}
+
+.button_white {
+  border-radius: 25px;
+  padding: 8px;
+  width: 70%;
+  font-size: 22pt;
+  color: #000000;
+  background-color: #ffffff;
+  margin-left: 12.5%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  bottom: 24px;
+}
+
+.button_green {
+  border-radius: 25px;
+  padding: 8px;
+  width: 70%;
+  font-size: 22pt;
+  color: #ffffff;
+  background-color: #00E2A4;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#instructions {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16pt;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+#start_screen {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16pt;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+#match {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: url('/img/background_match.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-size: 16pt;
+    z-index: 3;
+}
+
+#match #logo {
+  margin-bottom: 64px;
+}
+
+#match_profile {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40%;
+  height: 40vw;
+  margin-left: 30%;
+  border: 3px solid #ffffff;
+  margin-top: 10%;
+}
+
+#match_profile img {
+    width: 100%;
+    margin-top: -20%;
+}
+
+#button_continue {
+    bottom: 20%;
+}
+
+.profile_wrapper {
+  width: 40vh;
+}
+
+
+@import url('http://fonts.cdnfonts.com/css/gotham-rounded');

@@ -1,0 +1,391 @@
+body {
+  margin: 0px;
+  font-family: 'Gotham Rounded', sans-serif;
+  color: #fff;
+  background-color: #ffffff;
+  /*overflow: hidden;*/
+}
+
+.profile_page {
+  background: url('/img/background_fast.jpg') no-repeat top center;
+  background-size: 100%;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 100%;
+  display: none;
+}
+
+.about, .interests, .character_traits, .personal {
+  color: #000000;
+  margin-left: 10%;
+  margin-top: 32px;
+  line-height: 22pt;
+}
+
+.interest_container, .trait_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rounded {
+  background-color: #e8e8e8;
+  border-radius: 8px;
+  padding: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+
+.pink {
+  background-color: #FFAFD3;
+}
+
+.yellow {
+  background-color: #F5D7B7;
+}
+
+.red {
+  background-color: #FFADAB;
+}
+
+.blue {
+  background-color: #D1B3DF;
+}
+
+.orange {
+  background-color: #FFB07F;
+}
+
+.about img {
+  width: 24px;
+  margin-top: -2px;
+  margin-right: 4px;
+}
+
+.text_title {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 10pt;
+  text-transform: uppercase;
+}
+
+#matches {
+  position: fixed;
+  left: 100%;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url('/img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#choose_container {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+#choose {
+  position: fixed;
+  left: 100%;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url('/img/background_match.jpg') no-repeat center center fixed;
+  background-size: cover;
+  z-index: 2;
+}
+
+.choose_block {
+  height: 45%;
+  box-sizing: border-box;
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.choose_block img {
+  height: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.choose_name {
+  margin-top: -32px;
+  margin-left: 8px;
+}
+
+#choose_none {
+  width: 84%;
+  background-color: #ffffff;
+  margin-left: 8%;
+  font-size: 13pt;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #000000;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#button_choose {
+  position: absolute;
+  margin-left: 15%;
+  bottom: 24px;
+}
+
+.selected {
+  border: 4px solid #00E2A4;
+}
+
+#no_matches {
+  text-align: center;
+  font-size: 22pt;
+  color: #000000;
+  font-weight: 400;
+  margin-top: 30%;
+}
+
+#no_matches img {
+  height: 5%;
+  margin-top: 16px;
+}
+
+.header {
+  width: 100%;
+  font-size: 26pt;
+  font-weight: 400;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  height: 8vh;
+  margin-top: 10%;
+}
+
+.logo img {
+  height: 100%;
+}
+
+#choose .header {
+  font-size: 16pt;
+}
+
+.title {
+    margin-top: 5%;
+    font-size: 21pt;
+    font-weight: 400;
+    margin-left: 10%;
+    text-align: left;
+}
+
+
+.profile {
+  height: 100%;
+  position: relative;
+  border-radius: 24px;
+}
+
+.name {
+  font-size: 18pt;
+  position: relative;
+  bottom: 52px;
+  left: 32px;
+}
+
+.card, .profile_back {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+}
+
+.quote {
+  color: #000000;
+  width: 80%;
+  margin-left: 10%;
+  font-style: italic;
+  margin-top: 16px;
+  line-height: 16pt;
+}
+
+.personal {
+  line-height: 16pt;
+  margin-right: 10%;
+}
+
+.profile_back .profile {
+  margin-top: 8px;
+  margin-left: 16px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#buttons {
+  position: absolute;
+  bottom: 3%;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+#buttons img {
+  height: 95%;
+}
+
+#dislike_button {
+  margin-right: 32px;
+}
+
+.button_white {
+  border-radius: 25px;
+  padding: 8px;
+  width: 70%;
+  font-size: 22pt;
+  color: #000000;
+  background-color: #ffffff;
+  margin-left: 12.5%;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  bottom: 24px;
+}
+
+.button_green {
+  border-radius: 25px;
+  padding: 8px;
+  width: 70%;
+  font-size: 22pt;
+  color: #ffffff;
+  background-color: #00E2A4;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#instructions {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16pt;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+#start_screen {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16pt;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.next {
+  margin-top: 64px;
+  margin-bottom: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#match {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: url('/img/background_match.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-size: 16pt;
+    z-index: 3;
+}
+
+#match .logo {
+  margin-bottom: 64px;
+}
+
+#match_profile {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40%;
+  height: 40vw;
+  margin-left: 30%;
+  border: 3px solid #ffffff;
+  margin-top: 10%;
+}
+
+#match_profile img {
+    width: 100%;
+    margin-top: -20%;
+}
+
+#button_continue {
+    bottom: 20%;
+}
+
+#matches_container {
+  margin-top: 16px;
+  overflow-y: scroll;
+  height: 65%;
+}
+
+.match_row {
+  box-sizing: border-box;
+  float: left;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgba(255,255,255,0.5);
+  margin-bottom: 16px;
+}
+
+.match_pic {
+  float: left;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  width: 20%;
+  height: 20vw;
+  overflow: hidden;
+}
+
+.match_pic img {
+  width: 100%;
+  margin-top: -20%;
+}
+
+.match_name {
+  float: left;
+  font-size: 20pt;
+  color: #000000;
+  margin-top: 7%;
+  margin-left: 10%;
+}
+
+.profile_wrapper {
+  width: 40vh;
+}
+
+
+@import url('http://fonts.cdnfonts.com/css/gotham-rounded');
